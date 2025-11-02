@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student KISKu | peakofthecircle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="studium.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">peakofthecircle</a>
+            <div class="nav-menu">
+                <a href="studium.html" class="nav-link active">student KISKu</a>
+                <a href="prace.html" class="nav-link">tutor</a>
+                <a href="prace.html#teoretik" class="nav-link">literární teoretik</a>
+                <a href="prace.html#knihovnik" class="nav-link">knihovník</a>
+                <a href="tvurce.html" class="nav-link">tvůrce</a>
+                <a href="miscellaneous.html" class="nav-link">miscellaneous</a>
+                <a href="kontakt.html" class="nav-link">proč mi napsat?</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="gradient-shape shape-circle"></div>
+        <h1 class="page-title">student KISKu</h1>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>V druhém ročníku magisterského studia.</h2>
+                    <p>Baví mě <strong>design služeb</strong>, <strong>teorie informačních věd</strong> a <strong>problematika informační gramotnosti</strong>.</p>
+                </div>
+                <div class="about-tags">
+                    <p class="intro-text">zápisky <span class="arrow">►►►►►►►►</span></p>
+                    <p class="intro-text">postřehy <span class="arrow">►►►►►►►►</span></p>
+                    <p class="intro-text">vypracované úkoly <span class="arrow">►►►►►►►►</span></p>
+                    <a href="#predmety" class="cta-button">KISK</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Předměty Section -->
+    <section class="predmety-section" id="predmety">
+        <div class="container">
+            <h2 class="section-title">🗃️ Předměty</h2>
+            
+            <!-- Loading State -->
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Načítám předměty z Notionu...</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="error" class="error-message" style="display: none;">
+                <p>Nepodařilo se načíst předměty. Zkuste to prosím znovu.</p>
+            </div>
+
+            <!-- Předměty Grid -->
+            <div id="predmety-container" class="predmety-grid" style="display: none;"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="studium.js"></script>
+</body>
+</html>
